@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import "./SlideOut.css"
-import {Link} from "react-router-dom"
 
+import { Link } from 'react-router-dom';
 const SlideOutMenuContainer = () => {
   const [visible, setVisible] = useState(false);
 
@@ -12,8 +12,8 @@ const SlideOutMenuContainer = () => {
       </div>
       <div>
         <ul id="slide_menu" style={{ display: (visible ? 'block' : 'none') }}>
-        <li><a href="#">Dashboard</a></li>
-          <li><a href="#">All rides</a></li>
+        <li><a href="/">Dashboard</a></li>
+          <li><a href="/">All rides</a></li>
           <li><a href="#">Add Driver</a></li>
           <li><a href="#">Add Vehicle</a></li>
           <li><a href="#">Earnings</a></li>
@@ -21,6 +21,10 @@ const SlideOutMenuContainer = () => {
           <li><a href="#">Terms and Conditions</a></li>
           <li><a href="#">Policy</a></li>
           <li><a href="#">Log Out</a></li>
+
+          <li>
+            <Link to ="/">Home</Link>
+          </li>
  
  
  

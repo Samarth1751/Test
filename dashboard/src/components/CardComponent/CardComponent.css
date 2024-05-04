@@ -1,17 +1,21 @@
 .card-container {
-    width: 15rem;
-    border-radius: 1rem;
-    box-shadow: 0px 10px 8px #999;
-    display: flex;
-    flex-direction: column;
-    margin: 0.5rem;
-    background-color: black;
-    height: fit-content;
-  }
-  .card-title {
-    margin: 0.5rem 5%;
-  }
-  
-  .card-description {
-    margin: 0.5rem 5%;
-  }
+  display: flex;
+  flex-wrap: wrap; /* Allow cards to wrap to the next row */
+  justify-content: space-between; /* Space cards evenly */
+  width: calc(15rem * 3 + 2rem); /* Adjust width to fit three cards with margins */
+  border-radius: 1rem;
+  box-shadow: 0px 10px 8px #999;
+  margin: 0.5rem auto; /* Center the container */
+  background-color: skyblue;
+  padding: 1rem; /* Add padding to the container */
+}
+
+.card {
+  width: calc(33.33% - 1rem); /* Adjust card width to fit three cards in a row */
+  margin-bottom: 1rem; /* Add bottom margin to create space between rows */
+}
+
+.card-title,
+.card-description {
+  margin: 0.5rem;
+}
